@@ -1,6 +1,11 @@
--- Active: 1750671264799@@127.0.0.1@3306@seneca
 
-create database seneca
+
+DROP DATABASE IF EXISTS seneca;
+
+
+
+
+create database if not exists seneca
 character set latin1
 collate latin1_spanish_ci;
 
@@ -33,6 +38,7 @@ create table asignaturas (
 
 
 drop table if exists vehiculos;
+
 create table vehiculos (
     matricula char(8) primary key,
     marca varchar(20) NOT NULL,
