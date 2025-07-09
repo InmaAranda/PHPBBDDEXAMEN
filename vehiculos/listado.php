@@ -22,8 +22,8 @@
        
        <?php
             if (isset($_POST['filtrar'])) {
-                $fechaMatriculacion = $_POST['fecha_matriculacion'];
-                $consulta="SELECT * FROM vehiculos WHERE fecha_matriculacion like '%".$fechaMatriculacion."%'";
+                $fecha_matriculacion = $_POST['fecha_matriculacion'];
+                $consulta = "SELECT * FROM vehiculos WHERE fecha_matriculacion >= '" . $fecha_matriculacion . "'";
             } else {
                 $consulta ="SELECT * FROM vehiculos";
             }

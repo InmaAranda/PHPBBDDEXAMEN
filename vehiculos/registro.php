@@ -8,22 +8,22 @@ require_once('../plantillas/cabecera.php');
     <form action="insertar.php" method="post">
         <div  class="control mb-3">
             <label for="matricula" class="col-sm-2 col-form-label">Matrícula:</label>
-            <input type="text" name="matricula" id="matricula" required class="form-control">
+            <input type="text" name="matricula" id="matricula" required class="form-control" required >
         </div>
 
         <div>
             <label for="marca" class="col-sm-2 col-form-label">Marca:</label>
-            <input type="text" name="marca" id="marca" required class="form-control">
+            <input type="text" name="marca" id="marca" required class="form-control" required>
         </div>
 
          <div>
             <label for="modelo" class="col-sm-2 col-form-label">Modelo:</label>
-            <input type="text" name="modelo" id="modelo" required class="form-control">
+            <input type="text" name="modelo" id="modelo" required class="form-control" required>
         </div>
 
         <div  class="control mb-3">
             <label for="tipo"class="col-sm-2 col-form-label">Tipo:</label>
-            <select name="tipo" id="tipo" class="form-select form-select-lg" required class="form-control">
+            <select name="tipo" id="tipo" class="form-select form-select-lg" required class="form-control" required>
                 <option value="turismo">Turismo</option>
                 <option value="autobús">Autobús</option>
                 <option value="camión">Camión</option>
@@ -33,21 +33,21 @@ require_once('../plantillas/cabecera.php');
 
         <div  class="control mb-3">
             <label for="color"class="col-sm-2 col-form-label">Color:</label>
-            <input type="text" name="color" id="color" class="form-control">
+            <input type="text" name="color" id="color" class="form-control" required>
         </div>
         <div>
             <label for="fecha_matriculacion" class="col-sm-2 col-form-label">Fecha de matriculación:</label>
-            <input type="date" name="fecha_matriculacion" id="fecha_matriculacion" class="form-control">
+            <input type="date" name="fecha_matriculacion" id="fecha_matriculacion" class="form-control" required>
         </div>
 
         <div  class="control mb-3">
             <label for="cilindrada"class="col-sm-2 col-form-label">Cilindrada:</label>
-            <input type="number" name="cilindrada" id="cilindrada" step="0.5" class="form-control">
+            <input type="text" name="cilindrada" id="cilindrada"class="form-control" required>
         </div>
         
         <div  class="control mb-3">
             <label for="itv_pasada"class="col-sm-2 col-form-label">ITV Pasada:</label>
-            <div class="col-sm-10" class="form-check">
+            <div class="col-sm-10"><div class="form-check">
                 <input class="form-check-input" type="radio"  name="itv_pasada" id="itv_si" value="1" checked>
                 <label class= "form-check-label" for="itv_si">Si</label>
            </div>
@@ -57,7 +57,7 @@ require_once('../plantillas/cabecera.php');
             </div>
 
         <div  class="control mb-3">
-            <input type="submit" value="Añadir Vehículo"   class="btn btn-primary">
+            <input type="submit" value="Añadir Vehículo" class="btn btn-primary">
         </div>
 
     </form>
