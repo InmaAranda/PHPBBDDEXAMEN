@@ -44,6 +44,16 @@
                 echo "<td> ".$fila['fecha_matriculacion']. " </td>\n";
                 echo "<td> ".$fila['cilindrada']. " </td>\n";
                 echo "<td> ".$fila['itv_pasada']. " </td>\n";
+                /*
+                CORRECCIÓN
+                if ($fila['itv_pasada]){
+                echo "<td>Si</td>\n"
+            }else{
+
+            echo"<td>no</td>\n"
+            }
+            echo "<td>
+                */
                 echo "<td><a href='#' class='btn btn-primary'>Editar</a></td>\n";
                 echo "<td><a href='#' class='btn btn-primary'>Eliminar</a></td>\n";
                 echo "</tr>\n";

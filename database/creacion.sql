@@ -55,3 +55,7 @@ values('9991ABC', 'mercedes', 'citaro', 'autobús', 'blanco', '2016-06-03', 7.5,
       ('1853DCL', 'porsche', 'panamera','turismo', 'rojo', '2019-01-03', 2.5, true),
       ('8627ADD', 'ford', 'torneo','furgon', 'blanco', '2009-12-27', 2.5, false),
       ('4250MLD', 'reanult', 'clio','turismo', 'verde', '2024-04-03', 2.5, true);
+
+
+----  UF1846 -- EJERCICIO 1
+ALTER TABLE alumnos ADD COLUMN dni CHAR(9) unique;

@@ -12,6 +12,8 @@
                 <th>Apellido2</th>
                 <th>Fecha de Nacimiento</th>
                 <th>Correo Electrónico</th>
+<!-- UF1846 - EJERCICIO 2.1 Inclusión de tabla dni-->
+                <th>DNI</th>
                 <th>Editar</th>
                 <th>Eliminar</th>
             </tr>
@@ -43,6 +45,8 @@
                 echo "<td> ".$fila['apellido2']." </td>\n";
                 echo "<td> ".$fila['fecha_nac']. " </td>\n";
                 echo "<td> ".$fila['email']. " </td>\n";
+            // UF1846 - EJERCICIO 2.1 - Inclusión en tabla de la columna DNI
+                echo "<td> ".$fila['dni']. " </td>\n";
                 echo "<td><a href='editar.php?id=".$fila['id']."' class='btn btn-primary'>Editar</a></td>\n";
                 echo "<td><a href='borrado.php?id=".$fila['id']."' class='btn btn-primary'>Eliminar</a></td>\n";
                 echo "</tr>\n";

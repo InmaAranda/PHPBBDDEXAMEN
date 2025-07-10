@@ -30,6 +30,13 @@ require_once('plantillas/cabecera.php');
             <label for="email" class="col-sm-2 col-form-label">Correo electrónico:</label>
             <input type="email" name="email" id="email" class="form-control">
         </div>
+
+<!-- UF1846 - EJERCICIO 2.2 Inclusión del campo tipo text-->
+        <div class="control mb-3">
+            <label for="dni" class="col-sm-2 col-form-label">DNI:</label>
+            <input type="text" name="dni" id="dni" class="form-control">
+        </div>
+
         <div class="control mb-3">
             <input type="submit" value="Añadir Alumno"  class="btn btn-primary">
         </div>

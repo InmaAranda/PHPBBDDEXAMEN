@@ -34,7 +34,8 @@ require_once('../plantillas/cabecera.php');
 
     <?php 
         $consulta = 
-            "insert into vehiculos (matricula, marca, modelo, tipo, color, fecha_matriculacion, cilindrada, itv_pasada)  values('$matricula','$marca', '$modelo', '$tipo', '$color', '$fecha_matriculacion', '$cilindrada', '$itv_pasada')";
+            "insert into vehiculos (matricula, marca, modelo, tipo, color, fecha_matriculacion, cilindrada, itv_pasada) 
+             values('$matricula','$marca', '$modelo', '$tipo', '$color', '$fecha_matriculacion', '$cilindrada', '$itv_pasada')";
 
            // ejecutamos la consulta
            $resultado = mysqli_query($conexion, $consulta);

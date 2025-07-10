@@ -24,6 +24,9 @@ $apellido2=$fila['apellido2'];
 $fechaNac = $fila['fecha_nac'];
 $email= $fila['email'];
 
+// UF1846 -- EJERCICIO 2.4
+$dni= $fila['dni']
+
 ?>
 
 <article>
@@ -54,6 +57,14 @@ $email= $fila['email'];
             <label for="email" class="col-sm-2 col-form-label">Correo electrónico:</label>
             <input type="email" name="email" id="email"  value='<?=$email?>' class="form-control">
         </div>
+
+<!--  UF1846 -- EJERCICIO 2.4: Modificación para edición con nuevo campo dni-->
+
+        <div  class="control mb-3">
+            <label for="dni" class="col-sm-2 col-form-label">DNI:</label>
+            <input type="text" name="dni" id="dni" required value='<?=$dni?>' class="form-control">
+        </div>
+
         <div  class="control mb-3">
             <input type="submit" value="Editar Alumno"  class="btn btn-primary">
         </div>

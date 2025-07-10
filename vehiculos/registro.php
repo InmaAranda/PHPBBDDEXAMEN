@@ -35,7 +35,7 @@ require_once('../plantillas/cabecera.php');
             <label for="color"class="col-sm-2 col-form-label">Color:</label>
             <input type="text" name="color" id="color" class="form-control" required>
         </div>
-        <div>
+l        <div>
             <label for="fecha_matriculacion" class="col-sm-2 col-form-label">Fecha de matriculación:</label>
             <input type="date" name="fecha_matriculacion" id="fecha_matriculacion" class="form-control" required>
         </div>
@@ -56,7 +56,7 @@ require_once('../plantillas/cabecera.php');
                 <label class= "form-check-label" for="itv_no">No</label>
             </div>
 
-        <div  class="control mb-3">
+        <div  class="control mb-3">0
             <input type="submit" value="Añadir Vehículo" class="btn btn-primary">
         </div>
 
